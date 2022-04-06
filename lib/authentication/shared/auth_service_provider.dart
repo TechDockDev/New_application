@@ -21,11 +21,9 @@ class AuthProvider {
       Fluttertoast.showToast(msg: e.toString());
     }
     if (user != null) {
-      Fluttertoast.showToast(msg: "Welcome").then(
-        (value) => Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) => const ProfileDashboard()),
-            (route) => false),
-      );
+      Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (context) => LogInPage()),
+          (route) => false);
     }
   }
 
@@ -38,13 +36,9 @@ class AuthProvider {
       Fluttertoast.showToast(msg: e.toString());
     }
     if (user != null) {
-      Fluttertoast.showToast(msg: "Welcome Back").then(
-        (value) => Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (context) => const ProfileDashboard(),
-          ),
-        ),
-      );
+      Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (context) => const ProfileDashboard()),
+          (route) => false);
     }
   }
 

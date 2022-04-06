@@ -6,7 +6,8 @@ import 'package:new_application/presentation/b_allergy_info_page.dart';
 import 'package:new_application/presentation/c_settings_page.dart';
 import 'package:new_application/presentation/d_allergy_card_page.dart';
 import 'package:new_application/presentation/e_privacy_terms_page.dart';
-import 'package:new_application/widgets/profile_page_list_tile.dart';
+import 'package:new_application/widgets/custom_fab.dart';
+import 'package:new_application/widgets/custom_list_tile.dart';
 import 'package:new_application/widgets/profile_page_search_bar.dart';
 import 'package:provider/provider.dart';
 
@@ -79,7 +80,7 @@ class ProfileDashboard extends HookWidget {
                 ],
               ),
             ),
-            ProfileListTile(
+            CustomListTile(
               title: 'Personal Data',
               leadingIcon: Icons.person,
               callback: () {
@@ -90,7 +91,7 @@ class ProfileDashboard extends HookWidget {
                 );
               },
             ),
-            ProfileListTile(
+            CustomListTile(
               title: 'Allergy Information',
               leadingIcon: Icons.info,
               callback: () {
@@ -101,7 +102,7 @@ class ProfileDashboard extends HookWidget {
                 );
               },
             ),
-            ProfileListTile(
+            CustomListTile(
               title: 'Settings',
               leadingIcon: Icons.settings,
               callback: () {
@@ -112,7 +113,7 @@ class ProfileDashboard extends HookWidget {
                 );
               },
             ),
-            ProfileListTile(
+            CustomListTile(
               title: 'Allergy Card',
               leadingIcon: Icons.description,
               callback: () {
@@ -123,7 +124,7 @@ class ProfileDashboard extends HookWidget {
                 );
               },
             ),
-            ProfileListTile(
+            CustomListTile(
               title: 'Privacy & Terms',
               leadingIcon: Icons.article,
               callback: () {
@@ -137,7 +138,7 @@ class ProfileDashboard extends HookWidget {
             const SizedBox(
               height: 50,
             ),
-            ProfileListTile(
+            CustomListTile(
               title: 'Log Out',
               leadingIcon: Icons.logout,
               callback: () {
@@ -147,31 +148,7 @@ class ProfileDashboard extends HookWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Container(
-          width: 60,
-          height: 60,
-          decoration: const BoxDecoration(
-            shape: BoxShape.circle,
-            gradient: LinearGradient(
-              colors: [
-                Color(0xFFFF5963),
-                Color(0xFFE72C37),
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Icon(Icons.warning_rounded),
-              Text('SOS'),
-            ],
-          ),
-        ),
-      ),
+      floatingActionButton: const CustomFab(),
     );
   }
 }

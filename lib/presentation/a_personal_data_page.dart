@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_application/dashboard/profile_dashboard.dart';
+import 'package:new_application/widgets/custom_fab.dart';
 
 class PersonalDataPage extends StatelessWidget {
   const PersonalDataPage({Key? key}) : super(key: key);
@@ -22,6 +23,8 @@ class PersonalDataPage extends StatelessWidget {
         ),
         title: const Text('Personal Data'),
       ),
+      floatingActionButton: const CustomFab(),
+
     );
   }
 }

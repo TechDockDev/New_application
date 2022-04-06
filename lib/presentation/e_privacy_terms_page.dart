@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_application/dashboard/profile_dashboard.dart';
+import 'package:new_application/widgets/custom_fab.dart';
 
 class PrivacyTermsPage extends StatelessWidget {
   const PrivacyTermsPage({Key? key}) : super(key: key);
@@ -22,6 +23,7 @@ class PrivacyTermsPage extends StatelessWidget {
         ),
         title: const Text('Privacy & Terms'),
       ),
+      floatingActionButton: const CustomFab(),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_application/dashboard/profile_dashboard.dart';
+import 'package:new_application/widgets/custom_fab.dart';
 
 class AllergyInfoPage extends StatelessWidget {
   const AllergyInfoPage({Key? key}) : super(key: key);
@@ -22,6 +23,8 @@ class AllergyInfoPage extends StatelessWidget {
         ),
         title: const Text('Allergy Information'),
       ),
+      floatingActionButton: const CustomFab(),
+
     );
   }
 }

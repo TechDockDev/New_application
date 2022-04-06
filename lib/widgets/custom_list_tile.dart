@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class ProfileListTile extends StatelessWidget {
+class CustomListTile extends StatelessWidget {
   final String title;
   final IconData leadingIcon;
   final VoidCallback callback;
-  const ProfileListTile({
+  const CustomListTile({
     Key? key,
     required this.title,
     required this.leadingIcon,

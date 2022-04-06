@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_application/dashboard/profile_dashboard.dart';
+import 'package:new_application/widgets/custom_fab.dart';
 
 class AllergyCardPage extends StatelessWidget {
   const AllergyCardPage({Key? key}) : super(key: key);
@@ -22,6 +23,8 @@ class AllergyCardPage extends StatelessWidget {
         ),
         title: const Text('Allergy Card'),
       ),
+      floatingActionButton: const CustomFab(),
+
     );
   }
 }
