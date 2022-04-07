@@ -5,6 +5,7 @@ import 'package:new_application/authentication/shared/auth_service_provider.dart
 import 'package:new_application/widgets/auth_social_media.dart';
 import 'package:new_application/widgets/auth_submit_buttons.dart';
 import 'package:new_application/widgets/auth_text_form_field.dart';
+import 'package:new_application/widgets/auth_text_form_field_password.dart';
 import 'package:provider/provider.dart';
 
 class SignUpPage extends HookWidget {

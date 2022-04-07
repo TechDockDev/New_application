@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:new_application/dashboard/profile_dashboard.dart';
+import 'package:new_application/dashboard/settings/a_login_info_page.dart';
+import 'package:new_application/dashboard/settings/b_language_page.dart';
+import 'package:new_application/dashboard/settings/c_notification_page.dart';
+import 'package:new_application/dashboard/settings/d_location_page.dart';
+import 'package:new_application/dashboard/settings/e_contact_us_page.dart';
 import 'package:new_application/widgets/custom_fab.dart';
 import 'package:new_application/widgets/custom_list_tile.dart';
 
@@ -12,7 +17,7 @@ class SettingsPage extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.of(context).pop(
+            Navigator.of(context).pushReplacement(
               MaterialPageRoute(
                 builder: (context) => const ProfileDashboard(),
               ),
@@ -30,55 +35,55 @@ class SettingsPage extends StatelessWidget {
             title: 'Login Information',
             leadingIcon: Icons.email,
             callback: () {
-              // Navigator.of(context).push(
-              //   MaterialPageRoute(
-              //     builder: (context) => const PersonalDataPage(),
-              //   ),
-              // );
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => const LoginInfoPage(),
+                ),
+              );
             },
           ),
           CustomListTile(
             title: 'Language',
             leadingIcon: Icons.translate,
             callback: () {
-              // Navigator.of(context).push(
-              //   MaterialPageRoute(
-              //     builder: (context) => const AllergyInfoPage(),
-              //   ),
-              // );
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => const LanguagePage(),
+                ),
+              );
             },
           ),
           CustomListTile(
             title: 'Notification',
             leadingIcon: Icons.notifications,
             callback: () {
-              // Navigator.of(context).push(
-              //   MaterialPageRoute(
-              //     builder: (context) => const SettingsPage(),
-              //   ),
-              // );
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => const NotificationPage(),
+                ),
+              );
             },
           ),
           CustomListTile(
             title: 'Location',
             leadingIcon: Icons.location_on,
             callback: () {
-              // Navigator.of(context).push(
-              //   MaterialPageRoute(
-              //     builder: (context) => const AllergyCardPage(),
-              //   ),
-              // );
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => const LocationPage(),
+                ),
+              );
             },
           ),
           CustomListTile(
             title: 'Contact Us',
             leadingIcon: Icons.contact_support,
             callback: () {
-              // Navigator.of(context).push(
-              //   MaterialPageRoute(
-              //     builder: (context) => const PrivacyTermsPage(),
-              //   ),
-              // );
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => const ContactUsPage(),
+                ),
+              );
             },
           ),
         ],

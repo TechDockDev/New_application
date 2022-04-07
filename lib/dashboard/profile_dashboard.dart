@@ -84,7 +84,7 @@ class ProfileDashboard extends HookWidget {
               title: 'Personal Data',
               leadingIcon: Icons.person,
               callback: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) => const PersonalDataPage(),
                   ),
@@ -95,7 +95,7 @@ class ProfileDashboard extends HookWidget {
               title: 'Allergy Information',
               leadingIcon: Icons.info,
               callback: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) => const AllergyInfoPage(),
                   ),
@@ -106,7 +106,7 @@ class ProfileDashboard extends HookWidget {
               title: 'Settings',
               leadingIcon: Icons.settings,
               callback: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) => const SettingsPage(),
                   ),
@@ -117,7 +117,7 @@ class ProfileDashboard extends HookWidget {
               title: 'Allergy Card',
               leadingIcon: Icons.description,
               callback: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) => const AllergyCardPage(),
                   ),
@@ -128,7 +128,7 @@ class ProfileDashboard extends HookWidget {
               title: 'Privacy & Terms',
               leadingIcon: Icons.article,
               callback: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) => const PrivacyTermsPage(),
                   ),
